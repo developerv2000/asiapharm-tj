@@ -2,7 +2,7 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 
-$recaptcha_secret = 'YOUR_SECRET_KEY';
+$recaptcha_secret = '6LeTtHcpAAAAAAWc9nXF0MOW6FqL_Uu2GHq1WGzw';
 $recaptcha_response = $_POST['g-recaptcha-response'];
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 $recaptcha_data = array(
@@ -34,7 +34,7 @@ if ($name && $phone) {
     $recaptcha_result = file_get_contents($recaptcha_url, false, $context);
     $recaptcha_result = json_decode($recaptcha_result);
 
-    if ($recaptcha_result->success && $recaptcha_result->score >= 0.5) {
+    if ($recaptcha_result->success) {
         if (mail($to, $subject, $message, $headers)) {
             header("Location: http://asiapharm.tj/");
             die();
