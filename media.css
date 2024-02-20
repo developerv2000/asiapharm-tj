@@ -1,0 +1,166 @@
+@media screen and (max-width: 991px) {
+  .main-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header__inner {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .logo__image {
+    height: 46px;
+  }
+
+  .header__contacts {
+    order: 3;
+    flex-direction: column;
+    gap: 20px;
+    margin: 24px 0 0;
+    align-items: flex-start;
+  }
+
+  .header__phone-button {
+    display: flex;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .banner__txt-container {
+    background: linear-gradient(90deg, #009CA3 0%, rgba(0, 156, 163, 0.6) 57.6%, rgba(0, 156, 163, 0.1) 85.19%, rgba(0, 156, 163, 0) 100%), url(img/banner-mob.png);
+    background-size: cover;
+    background-position: right center;
+    padding: 40px 32px;
+  }
+
+  .banner__title {
+    font-size: 22px;
+  }
+
+  .banner__desc {
+    font-size: 16px;
+  }
+
+  .about__inner {
+    padding: 40px 16px;
+    flex-direction: column;
+  }
+
+  .about__left {
+    padding: 40px 32px
+  }
+
+  .about__right {
+    width: 100%;
+    min-width: auto;
+    padding: 40px 32px;
+  }
+
+  .task__inner {
+    padding: 0 16px;
+  }
+
+  .task__desc {
+    margin-bottom: 20px;
+  }
+
+  .task__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .task-card__header {
+    padding: 32px;
+  }
+
+  .task-card .main-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .task-card__footer {
+    padding: 32px;
+  }
+
+  .advantages__inner {
+    padding: 40px 16px;
+  }
+
+  .advantages__desc {
+    margin-bottom: 20px;
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .advantages-card {
+    padding: 24px 32px;
+  }
+
+  .partners__inner {
+    padding-top: 0;
+  }
+
+  .partners__desc {
+    margin-bottom: 20px;
+  }
+
+  .partners__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .partners-card {
+    padding: 20px 32px;
+  }
+
+  .contacts__inner {
+    padding-top: 40px;
+  }
+
+  .contacts__desc {
+    margin-bottom: 20px;
+  }
+
+  .contacts__list {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contacts__map {
+    height: 360px;
+  }
+
+  .consultation__inner {
+    padding-top: 40px;
+  }
+
+  .consultation__title {
+    margin-bottom: 20px;
+  }
+
+  .consultation-form {
+    padding: 32px 20px;
+  }
+
+  .form__inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .consultation-form__submit {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px 20px;
+  }
+}
